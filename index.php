@@ -1,5 +1,5 @@
 <?php 
-    include_once "./database.php";
+    include_once "./includes/database.php";
     $obj = new Query();
 
     if(isset($_GET['type']) && $_GET['type'] == 'delete'){
