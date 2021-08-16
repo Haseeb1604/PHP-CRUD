@@ -1,5 +1,5 @@
 <?php 
-    include_once "./includes/database.php";
+    include_once "includes/database.php";
     $obj = new Query();
 
     if(isset($_GET['type']) && $_GET['type'] == 'delete'){
@@ -27,9 +27,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud</title>
-    <link rel="stylesheet" href="./style/bootstrap.css">
-    <link rel="stylesheet" href="./style/index.css">
-    <!-- <link rel="stylesheet" href="./style/all.css"> -->
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/index.css">
+    <!-- <link rel="stylesheet" href="style/all.css"> -->
 </head>
 <body>
     <div class="container ms-auto me-auto">
@@ -42,7 +42,7 @@
             </button>
         </div>
         <hr>
-        <form method="post" action="./index.php" class="form my-3 d-none">
+        <form method="post" action="index.php" class="form my-3 d-none">
             <div class="mx-auto my-3" style="width: 98%">
                 <div class=" fw-normal fs-4">
                     Field with name <span class="text-danger">*</span> are Mandatory
@@ -108,8 +108,8 @@
     <div class="footer text-center p-3 bg-light card">
         Copyright &copy; 2021
     </div>
-    <script src="./script/bootstrap.min.js"></script>
-    <script src="./script/index.js"></script>
-    <script src="./script/all.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/index.js"></script>
+    <script src="script/all.js"></script>
 </body>
 </html>

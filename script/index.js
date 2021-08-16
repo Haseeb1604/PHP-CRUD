@@ -75,7 +75,7 @@ function getEditData(id){
     let form_data = new FormData();
     let xmlhttp = new XMLHttpRequest();
     form_data.append('edit-id', id);
-    xmlhttp.open('POST', "./includes/edit.php");
+    xmlhttp.open('POST', "includes/edit.php");
     xmlhttp.send(form_data);
     xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState == 4 && xmlhttp.status==200) {
@@ -109,7 +109,7 @@ function insertToForm(data) {
             form_data.append(obj[key].name, obj[key].value);
         }
         let xmlhttp = new XMLHttpRequest();
-        xmlhttp.open('POST', "./includes/edit.php");
+        xmlhttp.open('POST', "includes/edit.php");
         xmlhttp.send(form_data);
         xmlhttp.onreadystatechange = function() {
             if(xmlhttp.readyState == 4 && xmlhttp.status==200) {

@@ -1,5 +1,5 @@
 <?php
-    include_once './database.php';
+    include_once 'database.php';
     $obj = new Query();
 
     if(isset($_POST['edit-id'])){
